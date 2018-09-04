@@ -1,0 +1,11 @@
+.header {
+    padding: 5px;
+    border: gray solid 1px;
+    display: flex;
+}
+.cart {
+    margin: 0 10px 0 auto;
+}
+.cart svg {
+    margin: 0 10px;
+}
