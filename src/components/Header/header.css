@@ -1,6 +1,6 @@
 .header {
-    padding: 5px;
-    border: gray solid 1px;
+    padding: 15px 10px;
+    border-bottom: gray solid 1px;
     display: flex;
 }
 .cart {

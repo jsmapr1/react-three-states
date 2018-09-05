@@ -4,7 +4,7 @@ import './Promotion.css';
 export default function Promotion() {
   return(
     <section className="promotion green">
-      Promotion
+      Buy 3 get 1 free!
     </section>
   );
 }

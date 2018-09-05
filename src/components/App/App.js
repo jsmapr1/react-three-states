@@ -4,6 +4,7 @@ import './App.css';
 
 import Header from '../Header/Header';
 import Promotion from '../Promotion/Promotion';
+import Shop from '../Shop/Shop';
 
 class App extends Component {
   render() {
@@ -11,17 +12,7 @@ class App extends Component {
       <div>
         <Header />
         <Promotion />
-        <article>
-          <section>
-            <h1>Merchandise</h1>
-            <ul>
-              <li>Item 1</li>
-              <li>Item 2</li>
-              <li>Item 3</li>
-              <li>Item 4</li>
-            </ul>
-          </section>
-        </article>
+        <Shop />
       </div>
     );
   }
