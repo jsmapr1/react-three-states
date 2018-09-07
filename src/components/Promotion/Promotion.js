@@ -1,6 +1,7 @@
 import React from 'react';
 import RegionContext from '../RegionContext/RegionContext';
 
+import BuyMore from '../BuyMore/BuyMore';
 import './Promotion.css';
 
 export default function Promotion() {
@@ -9,7 +10,7 @@ export default function Promotion() {
       {({ region }) => {
         return (
         <section className="promotion green">
-          <div>Buy 3 get 1 free!</div>
+          <BuyMore />
           {region.specials && region.specials.map(special => (
             <div key={special.id}>{special.text}</div>
           ))}

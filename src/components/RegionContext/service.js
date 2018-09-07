@@ -6,7 +6,7 @@ export default function fetchRegion() {
         specials: [
           {
             id: 100,
-            text: 'Free Drink with Calzone'
+            text: 'Free Drink with Pasta'
           }
         ],
         deliveryTime: 30
