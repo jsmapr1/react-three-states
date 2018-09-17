@@ -12,6 +12,16 @@ function cart(state = [], action) {
   }
 }
 
+function count(state = 0, action) {
+  switch (action.type) {
+    case 'ADD_ONE':
+      return state + 1;
+    default:
+      return state;
+  }
+}
+
 export default combineReducers({
   cart,
+  count,
 })

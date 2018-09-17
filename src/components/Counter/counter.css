@@ -1,0 +1,8 @@
+.counter {
+    margin: 3em;
+}
+
+.counter button {
+    display: block;
+    margin: 1em 0;
+}

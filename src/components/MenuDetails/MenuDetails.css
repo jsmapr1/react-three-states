@@ -1,0 +1,14 @@
+.menu-details {
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.menu-details button {
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0 5px;
+    font-size: 17px;
+    cursor: pointer;
+}

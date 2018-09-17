@@ -3,6 +3,7 @@ import { connect } from 'react-redux'
 import { addToCart } from '../../store/actions';
 import './shop.css';
 import menu from './menu';
+import MenuDetails from '../MenuDetails/MenuDetails';
 
 export class Shop extends Component {
   state = {
@@ -30,6 +31,7 @@ export class Shop extends Component {
                 <div>
                   <span className="icon">{food.icon}</span>  {food.name}
                 </div>
+                <MenuDetails food={food} />
                 <button onClick={() => handleAdd(food)}>Add To Cart</button>
               </li>
             ))}

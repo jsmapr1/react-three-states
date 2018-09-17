@@ -4,3 +4,9 @@ export function addToCart(item){
     item
   })
 }
+
+export function add() {
+  return ({
+    type: 'ADD_ONE',
+  })
+}

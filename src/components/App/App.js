@@ -1,22 +1,19 @@
 import React, { Component } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import './App.css';
-
-import RegionProvider from '../RegionContext/RegionProvider';
-import Header from '../Header/Header';
-import Promotion from '../Promotion/Promotion';
-import Shop from '../Shop/Shop';
+import { BrowserRouter as Router, Route, } from 'react-router-dom';
+import Counter from '../Counter/Counter';
+import Pizza from '../Pizza/Pizza';
 
 class App extends Component {
   render() {
     return (
+    <Router>
       <div>
-        <RegionProvider>
-          <Header />
-          <Promotion />
-          <Shop />
-        </RegionProvider>
+        <Route exact path="/counter" component={Counter}/>
+        <Route exact path="/" component={Pizza}/>
       </div>
+    </Router>
     );
   }
 }
