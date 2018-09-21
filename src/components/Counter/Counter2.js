@@ -9,9 +9,15 @@ export default function Counter() {
   return(
     <div>
       <StateCounter />
+      <StateCounter />
+      <ReduxCounter />
       <ReduxCounter />
       <CounterProvider>
-          <OtherComponent />
+        <OtherComponent />
+      </CounterProvider>
+      <CounterProvider>
+        <OtherComponent />
+        <OtherComponent />
       </CounterProvider>
     </div>
   )

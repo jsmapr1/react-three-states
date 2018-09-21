@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import CounterContext from './CounterContext';
-import OtherComponent from './OtherComponent';
 
 export default class ContextProvider extends Component {
   state = {
@@ -13,7 +12,7 @@ export default class ContextProvider extends Component {
   render() {
     return (
       <CounterContext.Provider value={this.state}>
-        <OtherComponent />
+        {this.props.children}
       </CounterContext.Provider>
     )
   }

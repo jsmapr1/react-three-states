@@ -17,7 +17,8 @@ library.add(faCartPlus);
 
 function saveState(state) {
   try {
-    const serialisedState = JSON.stringify(state);
+    const {count, ...rest} = state;
+    const serialisedState = JSON.stringify({ ...rest});
     window.sessionStorage.setItem('app_state', serialisedState);
   } catch (err) {
   }
