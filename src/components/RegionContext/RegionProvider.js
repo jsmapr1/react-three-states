@@ -6,7 +6,6 @@ import RegionContext from './RegionContext';
 class RegionProvider extends Component {
   state = {
     region: {},
-    updateRegion: this.updateRegion,
   };
 
   componentDidMount() {
