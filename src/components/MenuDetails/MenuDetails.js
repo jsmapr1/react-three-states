@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './MenuDetails.css';
 
-export default class Shop extends Component {
+export default class MenuDetails extends Component {
   state = {
     open: false
   }
