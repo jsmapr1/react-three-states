@@ -1,16 +1,17 @@
 import React from 'react';
 import CounterContext from './CounterContext';
+import Display from '../Display/Display'
 
-export default function Display() {
+export default function ContextDisplay() {
   return(
     <CounterContext.Consumer>
       {({ addOne, count}) => {
         return (
-          <div className="counter">
-            <h3>Context Counter</h3>
-            Current Count: {count}
-            <button onClick={addOne}> Add One! </button>
-          </div>
+          <Display
+            addOne={addOne}
+            count={count}
+            title="Context Counter"
+          />
         )
       }}
     </CounterContext.Consumer>

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Display from './Display';
+import Display from '../Display/Display';
 
 export default class StateCounter extends Component {
   state = {
@@ -13,8 +13,9 @@ export default class StateCounter extends Component {
   render() {
     return (
       <Display
-        count={this.state.count}
         addOne={this.addOne}
+        count={this.state.count}
+        title="Local Counter"
       />
     )
   }

@@ -1,8 +1,8 @@
 import React from 'react';
-import Display from './Display';
+import ContextDisplay from './ContextDisplay';
 
 export default function AnotherComponent() {
   return(
-    <Display />
+    <ContextDisplay />
   )
 }

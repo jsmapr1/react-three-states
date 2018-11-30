@@ -2,14 +2,15 @@ import React from 'react';
 import { connect } from 'react-redux'
 
 import { add } from '../../store/actions';
+import Display from '../Display/Display';
 
 export function ReduxCounter({ addOne, count }) {
   return(
-    <div className="counter">
-      <h3>Redux Counter</h3>
-      Current Count: {count}
-      <button onClick={addOne}> Add One! </button>
-    </div>
+    <Display
+      addOne={addOne}
+      count={count}
+      title="Redux Counter"
+    />
   )
 }
 
