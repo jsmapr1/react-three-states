@@ -1,5 +1,5 @@
 import React from 'react';
-import StateCounter from '../StateCounter/StateCounter';
+import StateCounter from '../StateCounter/StateCounterHooks';
 import ReduxCounter from '../ReduxCounter/ReduxCounter';
 import CounterProvider from '../ContextCounter/CounterProvider';
 import OtherComponent from '../ContextCounter/OtherComponent';
